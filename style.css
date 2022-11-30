@@ -1,0 +1,48 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Game Board styling, including the individual boxes */
+#GameBoardContainer {
+    height: 350px;
+    width: 350px;
+    border: solid 1px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.067);
+    display: grid;
+}
+
+#GameBoard {
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    display: grid;
+    align-items: center;
+}
+
+.Box1 {
+    place-self: center;
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.Box2 {
+    place-self: center;
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.Box3 {
+    place-self: center;
+    display: grid;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+.Box4, .Box5, .Box6, .Box7, .Box8, .Box9 {
+    place-self: center;
+}
