@@ -11,6 +11,7 @@ body {
     width: 350px;
     border: solid 1px;
     border-radius: 12px;
+    
     background-color: rgba(0, 0, 0, 0.067);
     display: grid;
 }
