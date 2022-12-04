@@ -14,6 +14,8 @@ body {
     
     background-color: rgba(0, 0, 0, 0.067);
     display: grid;
+
+    margin-top: 15px;
 }
 
 #GameBoard {
@@ -21,29 +23,42 @@ body {
     grid-template-rows: 1fr, 1fr, 1fr;
     display: grid;
     align-items: center;
+    
 }
 
-.Box1 {
+.grid-box {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.grid-box0 {
     place-self: center;
     display: grid;
     grid-column: 1 / 1;
     grid-row: 1 / 1;
 }
 
-.Box2 {
+.grid-box1 {
     place-self: center;
     display: grid;
     grid-column: 2 / 2;
     grid-row: 1 / 1;
 }
 
-.Box3 {
+.grid-box2 {
     place-self: center;
     display: grid;
     grid-column: 3 / 3;
     grid-row: 1 / 1;
 }
 
-.Box4, .Box5, .Box6, .Box7, .Box8, .Box9 {
+.grid-box3, .grid-box4, .grid-box5, .grid-box6, .grid-box7, .grid-box8 {
     place-self: center;
+}
+
+.game-board-button {
+    place-self: stretch;
 }
